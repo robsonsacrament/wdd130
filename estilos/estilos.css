@@ -1,0 +1,39 @@
+/* Estilo para o elemento main - limitar largura */
+main {
+  max-width: 840px;
+}
+
+/* Estilo para o elemento aside */
+aside {
+  width: 20rem;
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.2);
+  padding: 1rem;
+  background-color: #eee;
+  color: #333;
+  text-align: center;
+}
+
+/* Estilo para img dentro de aside */
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+/* Estilo para imagem do perfil (img dentro de main) */
+main img {
+  width: 150px;
+  height: auto;
+}
+
+/* Estilo para parágrafos - remover padding */
+p {
+  padding: 0;
+}
+
+/* Estilo para o footer */
+footer {
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+  text-align: center;
+}
