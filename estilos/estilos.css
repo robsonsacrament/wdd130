@@ -1,39 +1,140 @@
-/* Estilo para o elemento main - limitar largura */
+/* Seletor Universal - Reset de margens, paddings e box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo para o corpo da página */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+/* Estilo para o elemento main - limitar largura e centralizar */
 main {
   max-width: 840px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para imagens dentro de main (foto de perfil) */
+main img {
+  width: 150px;
+  height: auto;
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+/* Estilo para títulos */
+h1, h2 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+h1 {
+  font-size: 1.8rem;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+/* Estilo para parágrafos */
+p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* Estilo para listas */
+ul {
+  list-style-type: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+ul li::before {
+  content: "•";
+  color: #0066cc;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+ul li a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  text-decoration: underline;
 }
 
 /* Estilo para o elemento aside */
 aside {
-  width: 20rem;
-  margin: 1rem;
-  border: 1px solid rgb(0 0 0 / 0.2);
-  padding: 1rem;
-  background-color: #eee;
-  color: #333;
+  width: 100%;
   text-align: center;
+  position: relative;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #e9ecef;
+  border-radius: 8px;
+  clear: both;
 }
 
 /* Estilo para img dentro de aside */
 aside img {
-  width: 200px;
+  width: 100%;
+  max-width: 200px;
   height: auto;
+  border-radius: 8px;
+  margin-top: 15px;
 }
 
-/* Estilo para imagem do perfil (img dentro de main) */
-main img {
-  width: 150px;
-  height: auto;
+/* Título dentro do aside com posicionamento absoluto */
+aside h2 {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin: 0;
 }
 
-/* Estilo para parágrafos - remover padding */
-p {
-  padding: 0;
+/* Parágrafos dentro do aside */
+aside p {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 15px;
 }
 
 /* Estilo para o footer */
 footer {
-  margin-top: 20px;
-  border-top: 1px solid #ccc;
+  max-width: 840px;
+  margin: 20px auto 0;
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 8px;
+}
+
+footer p {
+  margin: 0;
   text-align: center;
 }
