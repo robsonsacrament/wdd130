@@ -4,7 +4,6 @@
    - Vermelho principal: #F93E38
    - Azul principal: #137EC3
    - Azul claro: #5FBCE6
-   - Vermelho claro: #F39694
    - Cinza claro: #E0E7EE
    ======================================== */
 
@@ -13,12 +12,11 @@
     --vermelho-principal: #F93E38;
     --azul-principal: #137EC3;
     --azul-claro: #5FBCE6;
-    --vermelho-claro: #F39694;
     --cinza-claro: #E0E7EE;
     --branco: #FFFFFF;
     --preto-suave: #2C3E50;
-    --fonte-titulo: "Poppins", "Montserrat", "Times New Roman", serif;
-    --fonte-body: "Open Sans", "Arial", Helvetica, sans-serif;
+    --fonte-titulo: "Times New Roman", Georgia, serif;
+    --fonte-body: Arial, Helvetica, sans-serif;
 }
 
 /* Reset - Seletor Universal */
@@ -162,7 +160,6 @@ h2::after {
     font-size: 2.2rem;
     text-transform: uppercase;
     letter-spacing: 3px;
-    backdrop-filter: blur(3px);
 }
 
 /* Article dentro da hero */
@@ -178,11 +175,10 @@ h2::after {
     gap: 24px;
     align-items: center;
     border-radius: 16px;
-    backdrop-filter: blur(5px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .hero article img {
+    float: right;
     width: 120px;
     height: auto;
     border-radius: 12px;
@@ -219,6 +215,11 @@ h2::after {
     box-shadow: 0 5px 15px rgba(19, 126, 195, 0.4);
 }
 
+.btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
 /* ===== SEÇÕES ===== */
 section {
     margin: 40px 0;
@@ -230,6 +231,19 @@ section p {
     line-height: 1.7;
     margin-top: 15px;
     color: var(--preto-suave);
+}
+
+/* Classes auxiliares para texto */
+.mt-16 {
+    margin-top: 16px;
+}
+
+.white-text {
+    color: var(--branco);
+}
+
+.center-text {
+    text-align: center;
 }
 
 /* Cards para conteúdo futuro */
@@ -248,8 +262,8 @@ section p {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Seção "A aventura está te esperando!" */
-section:last-of-type {
+/* Seção Adventure Awaits You! */
+.adventure-section {
     background: linear-gradient(135deg, var(--azul-claro) 0%, var(--azul-principal) 100%);
     border-radius: 20px;
     padding: 40px 20px;
@@ -257,12 +271,12 @@ section:last-of-type {
     margin-top: 40px;
 }
 
-section:last-of-type h2 {
+.adventure-section h2 {
     color: var(--branco);
     margin-bottom: 20px;
 }
 
-section:last-of-type h2::after {
+.adventure-section h2::after {
     background: var(--branco);
 }
 
@@ -333,7 +347,9 @@ footer p {
     }
     
     .hero article img {
+        float: none;
         width: 80px;
+        margin: 0 auto;
     }
     
     h1 {
