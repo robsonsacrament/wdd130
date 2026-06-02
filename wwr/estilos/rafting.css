@@ -145,7 +145,7 @@ h2 {
 }
 
 /* Título do article (acessível, mas visualmente oculto) */
-.hero article h3 {
+.hero article h2 {
     position: absolute;
     width: 1px;
     height: 1px;
