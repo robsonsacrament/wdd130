@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corredeiras Rafting | Fale Conosco</title>
+    <meta name="description"
+        content="Entre em contato com a Corredeiras Rafting. Tire suas dúvidas, faça reservas ou envie sugestões. Estamos aqui para atendê-lo!">
+    <meta name="author" content="Robson Sacramento Beserra">
+    <link rel="stylesheet" href="estilos/rafting.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagens/logo.png" alt="Logo Corredeiras Rafting">
+        </div>
+        <nav>
+            <a href="index.html">Página Inicial</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="passeios.html">Passeios</a>
+            <a href="contato.html">Fale Conosco</a>
+        </nav>
+    </header>
+
+    <main class="contato-main">
+        <h1>Fale Conosco</h1>
+        <p class="contato-intro">Estamos aqui para responder suas perguntas e ajudar você a planejar sua próxima
+            aventura!</p>
+
+        <!-- Grid de duas colunas: informações da empresa + formulário -->
+        <div class="contato-grid">
+            <!-- Coluna esquerda: Informações da empresa -->
+            <div class="contato-info">
+                <h2>Informações da Empresa</h2>
+                <div class="info-detalhes">
+                    <p><strong>📍 Endereço:</strong><br>
+                        123 Rua Principal do Rio<br>
+                        Foz do Iguaçu, Paraná<br>
+                        Brasil</p>
+
+                    <p><strong>📞 Telefone:</strong><br>
+                        +55 45 99999-9999</p>
+
+                    <p><strong>✉️ E-mail:</strong><br>
+                        <a href="mailto:info@corredeiras.com">info@corredeiras.com</a>
+                    </p>
+                </div>
+
+                <!-- Google Maps incorporado -->
+                <div class="mapa">
+                    <h3>Onde Estamos</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115416.55955612344!2d-54.64805449999999!3d-25.540178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f690fc6c97d439%3A0xdcf0a5b8ecc5bcb4!2sFoz%20do%20Igua%C3%A7u%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1699999999999!5m2!1spt-BR!2sbr"
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Coluna direita: Formulário de contato -->
+            <div class="contato-formulario">
+                <h2>Envie sua Mensagem</h2>
+                <form action="#" method="post" class="form-contato">
+                    <!-- Nome -->
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+
+                    <!-- E-mail -->
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <!-- Finalidade da Mensagem (radio buttons) -->
+                    <div class="form-group">
+                        <label>Finalidade da Mensagem</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="finalidade" value="consulta" required> Consulta Geral
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="finalidade" value="reserva"> Pergunta sobre Reserva
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="finalidade" value="sugestao"> Sugestão de Site
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Mensagem -->
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                    </div>
+
+                    <!-- Checkbox Newsletter -->
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="newsletter"> Quero receber a newsletter mensal
+                        </label>
+                    </div>
+
+                    <!-- Botão Enviar -->
+                    <div class="form-group">
+                        <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Seção de Funcionários -->
+        <section class="funcionarios-section">
+            <h2>Nossa Equipe</h2>
+            <div class="funcionarios-grid">
+                <div class="funcionario-card">
+                    <img src="imagens/funcionario1.jpg" alt="Ana Paula Rodrigues - Guia de Rafting">
+                    <h3>Ana Paula Rodrigues</h3>
+                    <p>Guia de Rafting</p>
+                </div>
+                <div class="funcionario-card">
+                    <img src="imagens/funcionario2.jpg" alt="Carlos Mendes - Instrutor">
+                    <h3>Carlos Mendes</h3>
+                    <p>Instrutor Chefe</p>
+                </div>
+                <div class="funcionario-card">
+                    <img src="imagens/funcionario3.jpg" alt="Fernanda Souza - Atendimento">
+                    <h3>Fernanda Souza</h3>
+                    <p>Atendimento ao Cliente</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Corredeiras Rafting | Robson Sacramento Beserra</p>
+        <nav class="redes-sociais">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <img src="imagens/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <img src="imagens/linkedin.svg" alt="LinkedIn">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="imagens/instagram.svg" alt="Instagram">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+</html>
