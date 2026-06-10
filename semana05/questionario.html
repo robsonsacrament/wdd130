@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário | HTML e CSS</title>
+    <meta name="description" content="Questionário online para testar seus conhecimentos sobre HTML e CSS">
+    <meta name="author" content="Robson Sacramento Beserra">
+    <link rel="stylesheet" href="estilos/questionario.css">
+</head>
+
+<body>
+    <main>
+        <h1>📝 Questionário: HTML e CSS</h1>
+        <p>Teste seus conhecimentos respondendo as perguntas abaixo.</p>
+
+        <form action="#" method="post" class="questionario">
+            <!-- Pergunta 1: text (preencher a lacuna) -->
+            <div class="form-group">
+                <label for="q1">1. Qual tag HTML é usada para criar um link?</label>
+                <input type="text" id="q1" name="q1" placeholder="Digite a tag (ex: a)" required>
+            </div>
+
+            <!-- Pergunta 2: textarea (resposta curta) -->
+            <div class="form-group">
+                <label for="q2">2. Explique rapidamente o que significa CSS.</label>
+                <textarea id="q2" name="q2" rows="4" placeholder="Digite sua resposta aqui..." required></textarea>
+            </div>
+
+            <!-- Pergunta 3: select (caixa suspensa) -->
+            <div class="form-group">
+                <label for="q3">3. Qual propriedade CSS é usada para alterar a cor do texto?</label>
+                <select id="q3" name="q3" required>
+                    <option value="" selected disabled>Escolha uma opção...</option>
+                    <option value="color">color</option>
+                    <option value="background-color">background-color</option>
+                    <option value="font-family">font-family</option>
+                    <option value="border-color">border-color</option>
+                </select>
+            </div>
+
+            <!-- Pergunta 4: number (resposta numérica) -->
+            <div class="form-group">
+                <label for="q4">4. Quantos níveis de cabeçalho existem no HTML (h1 a hx)?</label>
+                <input type="number" id="q4" name="q4" min="1" max="10" placeholder="Digite um número" required>
+            </div>
+
+            <!-- Botão submit -->
+            <div class="form-group">
+                <button type="submit" class="btn-submit">📨 Enviar Questionário</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
