@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corredeiras Rafting | Fale Conosco</title>
+    <title>Corredeiras Rafting | Sobre Nós</title>
     <meta name="description"
         content="Entre em contato com a Corredeiras Rafting. Tire suas dúvidas, faça reservas ou envie sugestões. Estamos aqui para atendê-lo!">
     <meta name="author" content="Robson Sacramento Beserra">
@@ -24,14 +24,76 @@
         </nav>
     </header>
 
-    <main class="contato-main">
-        <h1>Fale Conosco</h1>
+    <main>
+        <!-- ===== SEÇÃO HERO (obrigatória) ===== -->
+        <div class="hero">
+            <img src="imagens/hero.webp" alt="Pessoas praticando rafting em corredeiras emocionantes">
+            <h1>Corredeiras Rafting</h1>
+            <article>
+                <h3>Nossa Missão</h3>
+                <img src="imagens/cliente-feliz.webp" alt="Cliente feliz em uma aventura de rafting">
+                <p>Nossa missão é conectar pessoas à natureza por meio de experiências seguras, emocionantes e
+                    inesquecíveis. Valorizamos aventura com responsabilidade, trabalho em equipe e respeito ao rio.
+                    Venha viver a energia das corredeiras com guias experientes e um atendimento acolhedor!</p>
+            </article>
+        </div>
+
+        <!-- ===== SEÇÃO HISTÓRIA (obrigatória) ===== -->
+        <section class="history-section">
+            <h2>História</h2>
+            <div class="history-content">
+                <div class="history-text">
+                    <p>A Corredeiras Rafting começou com um pequeno grupo de apaixonados por rios e esportes ao ar
+                        livre.
+                        Com o tempo, reunimos guias qualificados, aprimoramos nossos equipamentos e construímos uma
+                        reputação baseada em segurança e diversão. Hoje, recebemos famílias, iniciantes e aventureiros
+                        experientes para explorar as melhores rotas de corredeiras da região.</p>
+                    <p>Com mais de 15 anos de experiência, já realizamos mais de 5.000 expedições seguras,
+                        levando adrenalina e contato com a natureza para pessoas de todas as idades. Nossa equipe é
+                        formada
+                        por profissionais certificados e apaixonados pelo que fazem.</p>
+                </div>
+                <div class="history-image">
+                    <img src="imagens/historia.jpg" alt="Primeiros anos da Corredeiras Rafting">
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SEÇÃO AVENTURA (obrigatória) ===== -->
+        <section class="adventure-section">
+            <h2>A aventura está te esperando!</h2>
+            <div class="adventure-grid">
+                <figure>
+                    <img src="imagens/adventure1.webp" alt="Salto do Rio Negro">
+                    <figcaption>Salto do Rio Negro</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/adventure2.webp" alt="Corredeira do Rio Paranapanema">
+                    <figcaption>Corredeira do Rio Paranapanema</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/adventure3.webp" alt="Corredeira do Rio Jacaré">
+                    <figcaption>Corredeira do Rio Jacaré</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/adventure4.webp" alt="Cachoeira do Rio Verde">
+                    <figcaption>Cachoeira do Rio Verde</figcaption>
+                </figure>
+                <figure>
+                    <img src="imagens/adventure5.webp" alt="Corredeira do Rio das Pedras">
+                    <figcaption>Corredeira do Rio das Pedras</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- ===== CONTEÚDO DA PÁGINA DE CONTATO ===== -->
+        <h1 class="contato-titulo-principal">Fale Conosco</h1>
         <p class="contato-intro">Estamos aqui para responder suas perguntas e ajudar você a planejar sua próxima
             aventura!</p>
 
-        <!-- Grid de duas colunas: informações da empresa + formulário -->
+        <!-- Grid de duas colunas -->
         <div class="contato-grid">
-            <!-- Coluna esquerda: Informações da empresa -->
+            <!-- Coluna ESQUERDA: Informações da empresa -->
             <div class="contato-info">
                 <h2>Informações da Empresa</h2>
                 <div class="info-detalhes">
@@ -48,33 +110,29 @@
                     </p>
                 </div>
 
-                <!-- Google Maps incorporado -->
                 <div class="mapa">
                     <h3>Onde Estamos</h3>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115416.55955612344!2d-54.64805449999999!3d-25.540178!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f690fc6c97d439%3A0xdcf0a5b8ecc5bcb4!2sFoz%20do%20Igua%C3%A7u%2C%20PR!5e0!3m2!1spt-BR!2sbr!4v1699999999999!5m2!1spt-BR!2sbr"
-                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+                        width="100%" height="250" class="mapa-iframe" allowfullscreen="" loading="lazy">
                     </iframe>
                 </div>
             </div>
 
-            <!-- Coluna direita: Formulário de contato -->
+            <!-- Coluna DIREITA: Formulário de contato -->
             <div class="contato-formulario">
                 <h2>Envie sua Mensagem</h2>
                 <form action="#" method="post" class="form-contato">
-                    <!-- Nome -->
                     <div class="form-group">
                         <label for="nome">Nome</label>
                         <input type="text" id="nome" name="nome" required>
                     </div>
 
-                    <!-- E-mail -->
                     <div class="form-group">
                         <label for="email">E-mail</label>
                         <input type="email" id="email" name="email" required>
                     </div>
 
-                    <!-- Finalidade da Mensagem (radio buttons) -->
                     <div class="form-group">
                         <label>Finalidade da Mensagem</label>
                         <div class="radio-group">
@@ -90,20 +148,18 @@
                         </div>
                     </div>
 
-                    <!-- Mensagem -->
                     <div class="form-group">
                         <label for="mensagem">Mensagem</label>
-                        <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                        <textarea id="mensagem" name="mensagem" rows="5" required
+                            placeholder="Digite sua mensagem aqui..."></textarea>
                     </div>
 
-                    <!-- Checkbox Newsletter -->
                     <div class="form-group checkbox-group">
                         <label class="checkbox-label">
                             <input type="checkbox" name="newsletter"> Quero receber a newsletter mensal
                         </label>
                     </div>
 
-                    <!-- Botão Enviar -->
                     <div class="form-group">
                         <button type="submit" class="btn-submit">Enviar Mensagem</button>
                     </div>
