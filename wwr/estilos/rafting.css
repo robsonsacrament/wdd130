@@ -648,3 +648,1061 @@ footer p {
         font-size: 0.9rem;
     }
 }
+
+/* ========================================
+   CORREDEIRAS RAFTING - ESTILO COMPLETO
+   Paleta de Cores:
+   - Vermelho principal: #F93E38
+   - Azul principal: #137EC3
+   - Azul claro: #5FBCE6
+   - Cinza claro: #E0E7EE
+   ======================================== */
+
+/* Variáveis CSS */
+:root {
+    --vermelho-principal: #F93E38;
+    --azul-principal: #137EC3;
+    --azul-claro: #5FBCE6;
+    --cinza-claro: #E0E7EE;
+    --branco: #FFFFFF;
+    --preto-suave: #2C3E50;
+    --fonte-titulo: "Times New Roman", Georgia, serif;
+    --fonte-body: Arial, Helvetica, sans-serif;
+}
+
+/* Reset - Seletor Universal */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: var(--fonte-body);
+    color: var(--preto-suave);
+    background-color: var(--cinza-claro);
+    line-height: 1.6;
+}
+
+/* Limitar largura e centralizar header, main e footer */
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+    background-color: var(--branco);
+}
+
+/* ===== HEADER COM CSS GRID ===== */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 16px 32px;
+    background: linear-gradient(135deg, var(--azul-principal) 0%, var(--azul-claro) 100%);
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+/* Navegação com CSS Flex */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--vermelho-principal);
+    border-radius: 5px;
+}
+
+nav a:focus {
+    outline: 2px solid var(--branco);
+    outline-offset: 2px;
+    border-radius: 5px;
+}
+
+/* ===== MAIN ===== */
+main {
+    padding: 20px;
+}
+
+/* ===== HERO SECTION - VERSÃO SIMPLIFICADA ===== */
+.hero {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero-message {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    top: auto;
+    left: auto;
+    transform: none;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    border-radius: 40px;
+    z-index: 10;
+    width: auto;
+    box-shadow: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 0;
+}
+
+.hero-btn {
+    display: inline-block;
+    background-color: rgba(249, 62, 56, 0.85);
+    color: #FFFFFF;
+    padding: 8px 20px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.hero-btn:hover {
+    background-color: rgba(95, 188, 230, 0.9);
+    transform: scale(1.02);
+}
+
+/* Responsividade da Hero Section */
+@media (max-width: 768px) {
+    .hero-message {
+        bottom: 15px;
+        right: 15px;
+        padding: 6px 12px;
+    }
+    
+    .hero-btn {
+        padding: 6px 14px;
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-message {
+        bottom: 10px;
+        right: 10px;
+        padding: 4px 8px;
+    }
+    
+    .hero-btn {
+        padding: 4px 10px;
+        font-size: 0.65rem;
+    }
+}
+
+/* ===== GRID DA PÁGINA INICIAL ===== */
+.index-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.grid-item {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+}
+
+.grid-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.grid-item h2 {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 15px 0 10px;
+    color: var(--azul-principal);
+    font-family: var(--fonte-titulo);
+}
+
+.grid-item p {
+    text-align: center;
+    color: var(--preto-suave);
+}
+
+/* Responsividade do Grid */
+@media (max-width: 880px) {
+    .index-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+/* ===== NEWSLETTER ===== */
+.newsletter-section {
+    background: linear-gradient(135deg, var(--azul-principal) 0%, var(--azul-claro) 100%);
+    border-radius: 15px;
+    padding: 40px;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.newsletter-content h2 {
+    color: var(--branco);
+    margin-bottom: 10px;
+    font-family: var(--fonte-titulo);
+}
+
+.newsletter-content p {
+    color: var(--branco);
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+}
+
+.form-group-inline {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-group-inline input {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    width: 250px;
+    font-size: 1rem;
+}
+
+.btn-news {
+    background-color: var(--vermelho-principal);
+    color: var(--branco);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-news:hover {
+    background-color: #c0392b;
+}
+
+/* ===== CTA ===== */
+.cta-section {
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    padding: 50px 30px;
+    margin: 50px 0;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+.cta-content h2 {
+    color: var(--vermelho-principal);
+    margin-bottom: 15px;
+    font-family: var(--fonte-titulo);
+}
+
+.cta-content p {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
+
+.btn-cta {
+    display: inline-block;
+    background-color: var(--vermelho-principal);
+    color: var(--branco);
+    padding: 14px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-cta:hover {
+    background-color: var(--azul-claro);
+    transform: scale(1.05);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, var(--azul-principal) 0%, var(--azul-claro) 100%);
+    color: var(--branco);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.redes-sociais a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.redes-sociais img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.redes-sociais img:hover {
+    transform: scale(1.1);
+}
+
+/* ===== RESPONSIVIDADE GERAL ===== */
+@media (max-width: 880px) {
+    header, main, footer {
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    header {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 640px) {
+    main {
+        padding: 15px;
+    }
+    
+    .grid-item img {
+        height: 140px;
+    }
+    
+    footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .redes-sociais {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    header, main, footer {
+        width: 100%;
+    }
+    
+    .grid-item img {
+        height: 100px;
+    }
+}
+
+/* ========================================
+   CORREDEIRAS RAFTING - ESTILO COMPLETO
+   Paleta de Cores:
+   - Vermelho principal: #F93E38
+   - Azul principal: #137EC3
+   - Azul claro: #5FBCE6
+   - Cinza claro: #E0E7EE
+   ======================================== */
+
+/* Variáveis CSS */
+:root {
+    --vermelho-principal: #F93E38;
+    --azul-principal: #137EC3;
+    --azul-claro: #5FBCE6;
+    --cinza-claro: #E0E7EE;
+    --branco: #FFFFFF;
+    --preto-suave: #2C3E50;
+    --fonte-titulo: "Times New Roman", Georgia, serif;
+    --fonte-body: Arial, Helvetica, sans-serif;
+}
+
+/* Reset - Seletor Universal */
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: var(--fonte-body);
+    color: var(--preto-suave);
+    background-color: var(--cinza-claro);
+    line-height: 1.6;
+}
+
+/* Limitar largura e centralizar header, main e footer */
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+    background-color: var(--branco);
+}
+
+/* ===== HEADER COM CSS GRID ===== */
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    padding: 16px 32px;
+    background: linear-gradient(135deg, var(--azul-principal) 0%, var(--azul-claro) 100%);
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+/* Navegação com CSS Flex */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--vermelho-principal);
+    border-radius: 5px;
+}
+
+nav a:focus {
+    outline: 2px solid var(--branco);
+    outline-offset: 2px;
+    border-radius: 5px;
+}
+
+/* ===== MAIN ===== */
+main {
+    padding: 20px;
+}
+
+/* ===== HERO SECTION - INDEX (VERSÃO SIMPLIFICADA) ===== */
+.hero {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero-message {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    top: auto;
+    left: auto;
+    transform: none;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    border-radius: 40px;
+    z-index: 10;
+    width: auto;
+    box-shadow: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 0;
+}
+
+.hero-btn {
+    display: inline-block;
+    background-color: rgba(249, 62, 56, 0.85);
+    color: #FFFFFF;
+    padding: 8px 20px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.hero-btn:hover {
+    background-color: rgba(95, 188, 230, 0.9);
+    transform: scale(1.02);
+}
+
+/* Responsividade da Hero Section - Index */
+@media (max-width: 768px) {
+    .hero-message {
+        bottom: 15px;
+        right: 15px;
+        padding: 6px 12px;
+    }
+    
+    .hero-btn {
+        padding: 6px 14px;
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-message {
+        bottom: 10px;
+        right: 10px;
+        padding: 4px 8px;
+    }
+    
+    .hero-btn {
+        padding: 4px 10px;
+        font-size: 0.65rem;
+    }
+}
+
+/* ===== GRID DA PÁGINA INICIAL ===== */
+.index-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.grid-item {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+}
+
+.grid-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.grid-item h2 {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 15px 0 10px;
+    color: var(--azul-principal);
+    font-family: var(--fonte-titulo);
+}
+
+.grid-item p {
+    text-align: center;
+    color: var(--preto-suave);
+}
+
+/* Responsividade do Grid */
+@media (max-width: 880px) {
+    .index-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+/* ===== NEWSLETTER ===== */
+.newsletter-section {
+    background: linear-gradient(135deg, var(--azul-principal) 0%, var(--azul-claro) 100%);
+    border-radius: 15px;
+    padding: 40px;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.newsletter-content h2 {
+    color: var(--branco);
+    margin-bottom: 10px;
+    font-family: var(--fonte-titulo);
+}
+
+.newsletter-content p {
+    color: var(--branco);
+    margin-bottom: 20px;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+}
+
+.form-group-inline {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.form-group-inline input {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    width: 250px;
+    font-size: 1rem;
+}
+
+.btn-news {
+    background-color: var(--vermelho-principal);
+    color: var(--branco);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-news:hover {
+    background-color: #c0392b;
+}
+
+/* ===== CTA ===== */
+.cta-section {
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    padding: 50px 30px;
+    margin: 50px 0;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+.cta-content h2 {
+    color: var(--vermelho-principal);
+    margin-bottom: 15px;
+    font-family: var(--fonte-titulo);
+}
+
+.cta-content p {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
+
+.btn-cta {
+    display: inline-block;
+    background-color: var(--vermelho-principal);
+    color: var(--branco);
+    padding: 14px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-cta:hover {
+    background-color: var(--azul-claro);
+    transform: scale(1.05);
+}
+
+/* ===== PÁGINA PASSEIOS ===== */
+
+/* Hero da página de passeios - SIMPLIFICADA E TRANSPARENTE */
+.hero-passeios {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.hero-passeios img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.hero-passeios-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.35);
+    padding: 15px 30px;
+    border-radius: 15px;
+    color: #FFFFFF;
+    width: auto;
+    max-width: 90%;
+    backdrop-filter: blur(3px);
+    box-shadow: none;
+}
+
+.hero-passeios-message h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+    color: #FFFFFF;
+    font-family: var(--fonte-titulo);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+}
+
+.hero-passeios-message p {
+    font-size: 1rem;
+    margin: 0;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Chamada para ação principal */
+.cta-passeios {
+    text-align: center;
+    background: linear-gradient(135deg, var(--azul-principal) 0%, var(--azul-claro) 100%);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.cta-passeios p {
+    color: var(--branco);
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.btn-contato {
+    background-color: var(--vermelho-principal);
+    color: var(--branco);
+    padding: 10px 25px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-contato:hover {
+    background-color: var(--azul-claro);
+    transform: scale(1.02);
+}
+
+/* Grid de passeios */
+.passeios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.passeio-card {
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.passeio-card:hover {
+    transform: translateY(-5px);
+}
+
+.passeio-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.passeio-card h2 {
+    text-align: center;
+    margin: 15px 0 10px;
+    color: var(--azul-principal);
+    font-size: 1.4rem;
+}
+
+.passeio-card p {
+    padding: 0 15px;
+    margin-bottom: 10px;
+    color: var(--preto-suave);
+}
+
+.passeio-card p:last-of-type {
+    margin-bottom: 15px;
+}
+
+/* Tabela de passeios */
+.tabela-passeios {
+    margin: 50px 0;
+}
+
+.tabela-passeios h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: var(--azul-principal);
+}
+
+.tabela-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: var(--azul-principal);
+    color: var(--branco);
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: rgba(19, 126, 195, 0.1);
+}
+
+/* Chamada para ação final */
+.cta-final {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 40px;
+    border-radius: 15px;
+    margin: 40px 0 20px;
+    border: 1px solid #e0e0e0;
+}
+
+.cta-final h2 {
+    color: var(--vermelho-principal);
+    margin-bottom: 15px;
+}
+
+.cta-final p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.btn-reserva {
+    display: inline-block;
+    background-color: var(--vermelho-principal);
+    color: var(--branco);
+    padding: 12px 30px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-reserva:hover {
+    background-color: var(--azul-claro);
+    transform: scale(1.02);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, var(--azul-principal) 0%, var(--azul-claro) 100%);
+    color: var(--branco);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.redes-sociais a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.redes-sociais img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.redes-sociais img:hover {
+    transform: scale(1.1);
+}
+
+/* ===== RESPONSIVIDADE GERAL ===== */
+@media (max-width: 880px) {
+    header, main, footer {
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    header {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    nav {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .passeios-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-passeios-message {
+        padding: 10px 20px;
+    }
+    
+    .hero-passeios-message h1 {
+        font-size: 1.3rem;
+    }
+    
+    .hero-passeios-message p {
+        font-size: 0.8rem;
+    }
+    
+    .cta-passeios {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 640px) {
+    main {
+        padding: 15px;
+    }
+    
+    .grid-item img {
+        height: 140px;
+    }
+    
+    .passeio-card img {
+        height: 150px;
+    }
+    
+    .cta-final {
+        padding: 25px;
+    }
+    
+    .cta-final h2 {
+        font-size: 1.3rem;
+    }
+    
+    footer {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .redes-sociais {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    header, main, footer {
+        width: 100%;
+    }
+    
+    .hero-passeios-message {
+        padding: 8px 15px;
+    }
+    
+    .hero-passeios-message h1 {
+        font-size: 1rem;
+    }
+    
+    .hero-passeios-message p {
+        font-size: 0.7rem;
+    }
+    
+    .grid-item img {
+        height: 100px;
+    }
+    
+    .passeio-card img {
+        height: 120px;
+    }
+    
+    th, td {
+        padding: 8px 10px;
+        font-size: 0.75rem;
+    }
+}
